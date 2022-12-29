@@ -1,5 +1,5 @@
 #!/usr/bin/node
 function add (a, b) {
-return a + b;
+console.log(parseInt(a) + parse(b));
 }
-console.log(add(Number(process.agrv[2]), Number(process.argv[3])));
+add(process.argv[2], process.argv[3]);

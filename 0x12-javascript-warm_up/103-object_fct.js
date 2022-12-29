@@ -5,7 +5,7 @@ value: 12
 };
 console.log(myObject);
 myObject.incr = function () {
-this.value++;
+myObject.value += 1;
 };
 myObject.incr();
 console.log(myObject);
