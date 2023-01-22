@@ -1,9 +1,8 @@
 #!/usr/bin/node
-const size = parseInt(process.argv[2]);
-if (!isNaN(size)) {
-for (let n = 0; n < size; n++) {
-console.log('X'.repeat(size));
-}
-} else {
+if (isNaN(parseInt(process.argv[2], 10))) {
 console.log('Missing size');
+} else {
+let (n = 0; n < process.argv[2]; n++) {
+console.log('X'.repeat(process.argv[2]));
+}
 }

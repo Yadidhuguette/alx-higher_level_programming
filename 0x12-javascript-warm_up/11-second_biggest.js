@@ -1,7 +1,8 @@
 #!/usr/bin/node
 if (process.argv.length < 4) {
-console.log(0);
+console.log('0');
 } else {
-const ordN = process.argv.slice(2).sort((a, b) => a - b);
-console.log(ordN[ordN.length - 2]);
+const count = process.argv.slice(2);
+count.sort((a, b) => b - a);
+console.log(count[1]);
 }
