@@ -20,6 +20,6 @@ def find_peak(list_of_integers):
     if lt[s -1] < lt[s] > lt[s + 1]:
         return lt[s]
 
-    if lt[s + 1] > lt[s _ 1]:
+    if lt[s + 1] > lt[s - 1]:
         return find peak(lt[s:])
     return find_peak(lt[:s])
